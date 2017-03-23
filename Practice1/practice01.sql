@@ -13,7 +13,7 @@ select count(*) || '명'
 as "매니저가 없는 직원 수" from employees where manager_id is null;
 
 --문제4
-select job_title as "이름", max_salary"최고 연봉" from jobs order by max_salary desc;
+select job_title as "이름", max_salary as "최고 연봉" from jobs order by max_salary desc;
 
 --문제5
 select count(*) || '개' as "부서" from departments;
